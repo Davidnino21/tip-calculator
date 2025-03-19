@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  background-color: rgb(199, 209, 217);
+  display: flex;
+  justify-content: center;
+  max-width: 600px;
+  margin: 100px auto;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+h1 {
+  padding: 10px;
+  text-align: center;
+}
+
+input {
+    display: flex;
+    padding: 5px;
+    border-radius: 4px;
+    width: 100%;
+    margin: 10px 0;
+}
+
+button {
+    width: 100%;
+    padding: 5px;
+    margin: 10px 0;
+    background-color: green;
+    color: #ffffff;
+}
