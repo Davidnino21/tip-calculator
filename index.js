@@ -1,8 +1,12 @@
-const btn = document.getElementById("button")
-const bill= document.getElementById("bill")
-const tip= document.getElementById("tip")
-const total= document.getElementById("total")
+const btn = document.querySelector("button");
+const bill = document.querySelector("#bill");
+const tip = document.querySelector("#tip");
+const total = document.querySelector("#total");
 
-btn.addEventListener('click', function () {
-    console.log(btn)
-})
+function getTotal() {
+  const tipAmount = (bill.value * tip.value) / 100;
+  const totalAmount = Number(bill.value) + tipAmount;
+  total.innerHTML = totalAmount
+}
+
+btn.addEventListener("click", getTotal);
